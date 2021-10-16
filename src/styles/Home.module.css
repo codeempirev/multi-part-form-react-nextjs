@@ -1,0 +1,72 @@
+.mainContainer {
+  @apply min-h-screen w-full font-roboto bg-gray-200 bg-opacity-70 py-6 flex flex-col justify-center items-center sm:py-12;
+}
+
+/** Form */
+.form {
+  @apply bg-white p-8 w-11/12 md:w-1/2 lg:w-2/5 shadow-sm;
+}
+.form h2 {
+  @apply text-xl font-bold mb-4;
+}
+
+/** Input group */
+.inputGroup {
+  @apply flex flex-col gap-1 mb-8;
+}
+.inputGroup div{
+  @apply relative;
+}
+.inputGroup div span{
+  @apply absolute right-0 -bottom-5 text-red-400 text-xs;
+}
+.inputGroup h3 {
+  @apply text-purple-500;
+}
+.inputGroup legend {
+  @apply mt-2 text-gray-700;
+}
+.inputGroup input {
+  @apply w-full bg-gray-100 bg-opacity-50 border border-gray-200 p-2 rounded;
+  @apply focus:border-blue-500 focus:bg-white placeholder-gray-300;
+}
+.inputInvalid{
+  @apply border border-red-400 !important;
+}
+
+/** navigation by steps */
+.navigationControls {
+  @apply w-full items-end justify-between mt-4 flex;
+}
+.submitButton {
+  @apply py-3 px-5 bg-blue-700 text-blue-100 rounded text-sm font-bold;
+}
+.submitButton:disabled,
+.nextButton:disabled{
+  @apply opacity-40;
+}
+.backButton, 
+.nextButton{
+  @apply flex flex-row items-center;
+}
+.backButton {
+  @apply bg-gray-100 text-gray-400 rounded py-2 px-3 text-sm;
+}
+.nextButton {
+  @apply bg-blue-100 rounded py-2 px-3 text-blue-600 text-sm flex-row-reverse;
+}
+
+/** navigation controls */
+.stepRef{
+  @apply w-full flex items-center justify-center gap-1 py-3;
+}
+.markerBlue,
+.markerGray{
+  @apply rounded-full w-3 h-3;
+}
+.markerBlue{
+  @apply bg-blue-500;
+}
+.markerGray{
+  @apply bg-gray-300;
+}
