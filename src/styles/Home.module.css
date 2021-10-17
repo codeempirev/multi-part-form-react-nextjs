@@ -62,7 +62,7 @@
 }
 .markerBlue,
 .markerGray{
-  @apply rounded-full w-3 h-3;
+  @apply rounded-full w-2 h-2;
 }
 .markerBlue{
   @apply bg-blue-500;
