@@ -1,5 +1,5 @@
 .mainContainer {
-  @apply min-h-screen w-full font-roboto bg-gray-200 bg-opacity-70 py-6 flex flex-col justify-center items-center sm:py-12;
+  @apply min-h-screen w-full font-roboto bg-gray-200 py-6 flex flex-col justify-center items-center sm:py-12;
 }
 
 /** Form */
@@ -27,8 +27,8 @@
   @apply mt-2 text-gray-700;
 }
 .inputGroup input {
-  @apply w-full bg-gray-100 bg-opacity-50 border border-gray-200 p-2 rounded;
-  @apply focus:border-blue-500 focus:bg-white placeholder-gray-300;
+  @apply w-full bg-gray-100 border border-gray-300 p-2 rounded;
+  @apply focus:border-blue-500 focus:bg-white placeholder-gray-400;
 }
 .inputInvalid{
   @apply border border-red-400 !important;
@@ -36,36 +36,36 @@
 
 /** navigation by steps */
 .navigationControls {
-  @apply w-full items-end justify-between mt-4 flex;
+  @apply w-full justify-between mt-4 flex flex-row-reverse;
 }
 .submitButton {
   @apply py-3 px-5 bg-blue-700 text-blue-100 rounded text-sm font-bold;
 }
 .submitButton:disabled,
 .nextButton:disabled{
-  @apply opacity-40;
+  @apply opacity-40 cursor-not-allowed;
 }
 .backButton, 
 .nextButton{
-  @apply flex flex-row items-center;
+  @apply flex flex-row items-center text-xs font-bold;
 }
 .backButton {
-  @apply bg-gray-100 text-gray-400 rounded py-2 px-3 text-sm;
+  @apply bg-gray-100 text-gray-400 rounded py-2 px-3;
 }
 .nextButton {
-  @apply bg-blue-100 rounded py-2 px-3 text-blue-600 text-sm flex-row-reverse;
+  @apply bg-blue-100 rounded py-2 px-3 text-blue-600 flex-row-reverse;
 }
 
 /** navigation controls */
-.stepRef{
-  @apply w-full flex items-center justify-center gap-1 py-3;
+.reference{
+  @apply w-full flex items-center justify-center gap-1 py-4;
 }
 .markerBlue,
 .markerGray{
   @apply rounded-full w-2 h-2;
 }
 .markerBlue{
-  @apply bg-blue-500;
+  @apply bg-blue-600;
 }
 .markerGray{
   @apply bg-gray-300;
