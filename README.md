@@ -1,4 +1,4 @@
-<img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/thumbnail-min_LoxlQWSEV.png?updatedAt=1634304430192">
+<img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/formulario-base-readme-header-min_3nSE_Zd2ut.png?updatedAt=1634491684825">
 
 ---
 ## Sobre
@@ -12,11 +12,11 @@ Formulário base usado no <a href="https://moveit-patrickrios.vercel.app/">tutor
 ## Baixar o projeto
 ```bash
     # Baixando o projeto
-    $ git clone https://github.com/patrickrios/moveit
+    $ git clone https://github.com/patrickrios/formulario-base
 ```
 ```bash
     # Mudando para o diretório do projeto
-    $ cd moveit
+    $ cd formulario-base
 ```
 ```bash
     # Instalando as dependências
