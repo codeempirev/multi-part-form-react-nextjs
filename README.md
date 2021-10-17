@@ -1,15 +1,18 @@
-<img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/formulario-base-readme-header-min_3nSE_Zd2ut.png?updatedAt=1634491684825">
+<img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/formulario-base-readme-header-min_GPM2cA1bhQ.png?updatedAt=1634506644113">
 
 ---
-## Sobre
+
+### Sobre
 Formulário base usado no <a href="https://moveit-patrickrios.vercel.app/">tutorial em vídeo</a>.
 
-## Dependências
+---
+### Dependências
 - <a href="https://nextjs.org/">Next JS</a>
 - <a href="https://tailwindcss.com/">Tailwindcss</a>
 - <a href="https://react-hook-form.com/">React Hook Form</a>
 
-## Baixar o projeto
+---
+### Baixar o projeto
 ```bash
     # Baixando o projeto
     $ git clone https://github.com/patrickrios/formulario-base
