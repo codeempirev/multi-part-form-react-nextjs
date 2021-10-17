@@ -54,16 +54,16 @@ export default function Home() {
 
   const Navigation = () =>(
     <section className={styles.navigationControls}>
-      <button type="button" className={styles.backButton}>
-        <img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/back-arrow_ZBmeHiBP3.svg?updatedAt=1634410703363"/>
-        VOLTAR
+      <button type="submit" className={styles.submitButton} disabled={!isValid}>
+        SALVAR
       </button>
       <button type="button" className={styles.nextButton} disabled={!isValid}>
         <img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/next-arrow_1pmaQTqF3.svg?updatedAt=1634410703345"/>
         PRÓXIMO
       </button>
-      <button type="submit" className={styles.submitButton} disabled={!isValid}>
-        SALVAR
+      <button type="button" className={styles.backButton}>
+        <img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/back-arrow_ZBmeHiBP3.svg?updatedAt=1634410703363"/>
+        VOLTAR
       </button>
     </section>
   )
