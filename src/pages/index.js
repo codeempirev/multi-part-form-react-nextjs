@@ -2,7 +2,6 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { useForm } from 'react-hook-form'
 
-
 export default function Home() {
 
   const { 
@@ -27,7 +26,7 @@ export default function Home() {
   )
   
   /** Group the person input fields in a component */
-  const PersonData = () =>(
+  const PersonFields = () =>(
     <section className={styles.inputGroup}>
       <h3>Informações pessoais</h3>
       <Input  label="Nome completo" required type="text" placeholder="Ex: Maria Leopoldina de Habsburgo"/>
@@ -36,7 +35,7 @@ export default function Home() {
   )
 
   /** Group the contact input fields in a component */
-  const ContactData = () => (
+  const ContactFields = () => (
     <section className={styles.inputGroup}>
       <h3>Contato</h3>
       <Input label="Email" required type="email" placeholder="exemplo@exemplo.com.br"/>
@@ -45,7 +44,7 @@ export default function Home() {
   )
 
   /** Group the address input fields in a component */
-  const AddressData = () =>(
+  const AddressFields = () =>(
     <section className={styles.inputGroup}>
       <h3>Endereço</h3>
       <Input  label="Rua" required type="text" placeholder="Nome da rua, avenida, etc..."/>
@@ -53,7 +52,7 @@ export default function Home() {
     </section>
   )
 
-  const StepsNavigation = () =>(
+  const Navigation = () =>(
     <section className={styles.navigationControls}>
       <button type="button" className={styles.backButton}>
         <img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/back-arrow_ZBmeHiBP3.svg?updatedAt=1634410703363"/>
@@ -70,7 +69,7 @@ export default function Home() {
   )
 
   /** Mark the input group already filled as blue or gray if not */
-  const NavigationReference = () =>(
+  const Reference = () =>(
     <footer className={styles.stepRef}>
       <span className={styles.markerBlue}/>
       <span className={styles.markerGray}/>
@@ -92,9 +91,9 @@ export default function Home() {
       <main className={styles.mainContainer}>
         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
           <h2>Cadastrar pessoa</h2>
-          <PersonData/>
-          <ContactData/>
-          <AddressData/>
+          <PersonFields/>
+          <ContactFields/>
+          <AddressFields/>
           <button type="submit" className={styles.submitButton} disabled={!isValid}>
             SALVAR
           </button>
