@@ -70,7 +70,7 @@ export default function Home() {
 
   /** Mark the input group already filled as blue or gray if not */
   const Reference = () =>(
-    <footer className={styles.stepRef}>
+    <footer className={styles.reference}>
       <span className={styles.markerBlue}/>
       <span className={styles.markerGray}/>
       <span className={styles.markerGray}/>
