@@ -52,17 +52,21 @@ export default function Home() {
     </section>
   )
 
+  /** Nnavigation between steps */
+  const rightArrow = "https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/next-arrow_1pmaQTqF3.svg?updatedAt=1634410703345"
+  const leftArrow  = "https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/back-arrow_ZBmeHiBP3.svg?updatedAt=1634410703363"
+  
   const Navigation = () =>(
     <section className={styles.navigationControls}>
       <button type="submit" className={styles.submitButton} disabled={!isValid}>
         SAVE
       </button>
       <button type="button" className={styles.nextButton} disabled={!isValid}>
-        <img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/next-arrow_1pmaQTqF3.svg?updatedAt=1634410703345"/>
+        <img src={rightArrow}/>
         NEXT
       </button>
       <button type="button" className={styles.backButton}>
-        <img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/Form/back-arrow_ZBmeHiBP3.svg?updatedAt=1634410703363"/>
+        <img src={leftArrow}/>
         BACK
       </button>
     </section>
