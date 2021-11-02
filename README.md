@@ -1,28 +1,25 @@
-<img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/formulario-base-readme-header-min_GPM2cA1bhQ.png?updatedAt=1634506644113">
+<img src="https://ik.imagekit.io/lrjseyuxi3m/youtube/README-min_9yaGToBzcIj.png?updatedAt=1635797857577">
 
-### Sobre
-Formulário base usado no <a href="https://moveit-patrickrios.vercel.app/">tutorial em vídeo</a>.
+### About
+The result form of this <a href="https://youtu.be/p9m0VZyXwhI">video tutorial</a>. Check the <a href="https://multi-part-form-react-nextjs.vercel.app/">live demo</a>
 
-### Dependências
+### Dependencies
 - <a href="https://nextjs.org/">Next JS</a>
 - <a href="https://tailwindcss.com/">Tailwindcss</a>
 - <a href="https://react-hook-form.com/">React Hook Form</a>
 
-### Baixar o projeto
+### Cloning the project
 ```bash
-    # Baixando o projeto
-    $ git clone https://github.com/patrickrios/formulario-base
+    $ git clone https://github.com/codeempirev/multi-part-form-react-nextjs
 ```
 ```bash
-    # Mudando para o diretório do projeto
-    $ cd formulario-base
+    $ cd multi-part-form-react-nextjs
 ```
 ```bash
-    # Instalando as dependências
     $ yarn install
 ```
 ```bash
-    # Executando o projeto
     $ yarn dev
 ```
-### Inscreva-se no canal, curta e compartilha!
+### Subscribe, like and share
+<a href="https://www.youtube.com/channel/UCKVwiehGpmpUGKA-7evvuPw?sub_confirmation=1">SUBSCRIBE NOW!<a/>
