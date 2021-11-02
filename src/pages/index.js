@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { useForm } from 'react-hook-form'
+import { useState } from 'react';
 
 export default function Home() {
 
@@ -58,28 +59,49 @@ export default function Home() {
   
   const Navigation = () =>(
     <section className={styles.navigationControls}>
-      <button type="submit" className={styles.submitButton} disabled={!isValid}>
-        SAVE
-      </button>
-      <button type="button" className={styles.nextButton} disabled={!isValid}>
-        <img src={rightArrow}/>
-        NEXT
-      </button>
-      <button type="button" className={styles.backButton}>
+      {
+        step === fieldGroups.length-1 && 
+        <button type="submit" className={styles.submitButton} disabled={!isValid}>
+          SAVE
+        </button>
+      }
+      {
+        step < fieldGroups.length-1 &&
+        <button type="button" className={styles.nextButton} disabled={!isValid} onClick={()=>{setStep(step+1)}}>
+          <img src={rightArrow}/>
+          NEXT
+        </button>
+      }
+      {
+        step > 0 &&
+      <button type="button" className={styles.backButton} onClick={()=>{setStep(step-1)}}>
         <img src={leftArrow}/>
         BACK
       </button>
+      }
     </section>
   )
 
   /** Mark the input group already filled as blue or gray if not */
   const Reference = () =>(
     <footer className={styles.reference}>
-      <span className={styles.markerBlue}/>
-      <span className={styles.markerGray}/>
-      <span className={styles.markerGray}/>
+      {renderMarkers()}
     </footer>
   )
+  function renderMarkers(){
+    let markers = []
+    for(let i=0; i<fieldGroups.length; i++)
+      markers.push(<span className={step >= i ? styles.markerBlue : styles.markerGray} />)
+    return markers
+  }
+
+  const [step, setStep] = useState(0)
+
+  const fieldGroups =[
+    <PersonFields/>,
+    <ContactFields/>,
+    <AddressFields/>
+  ]
 
   return (
     <div>
@@ -95,12 +117,9 @@ export default function Home() {
       <main className={styles.mainContainer}>
         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
           <h2>User Register</h2>
-          <PersonFields/>
-          <ContactFields/>
-          <AddressFields/>
-          <button type="submit" className={styles.submitButton} disabled={!isValid}>
-            SAVE
-          </button>
+          {fieldGroups[step]}
+          <Navigation/>
+          <Reference/>
         </form>
       </main>
       
